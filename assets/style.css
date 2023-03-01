@@ -1,0 +1,122 @@
+body{
+    background-color: #0e1954;
+    font-family: Arial;
+    margin: 0;
+}
+:root {
+    --form-width: 400px;
+}
+* {
+    box-sizing: border-box;
+}
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+/* Login Page : Css */
+.login-page .login-form {
+    position: relative;
+    min-width: var(--form-width);
+    width: var(--form-width);
+    background-color: #fff;
+    color: #000;
+    margin: 2rem auto 0 auto;
+    box-shadow: 3px 2px 8px rgba(0,0,0, .3);
+    padding: 20px;
+    border-radius: .8rem;
+    margin-top: 10rem;
+}
+
+.login-form .form-heading {
+    color: #0e1954;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login-form .form-heading .label {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media(max-width: 720px) {
+    .login-page {
+        padding: 5px;
+    }
+    .login-page .login-form {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+/* Login form: Form controls */
+.form-controls {
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+}
+.form-controls .fc-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #0e1954;
+}
+.form-controls .fc-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.form-controls.warning .fc-label {
+    color: #f00;
+}
+.form-controls.warning .fc-input {
+    border-color: red;
+}
+.form-controls .fc-input:focus {
+    box-shadow: 0px 0px 3px #000;
+}
+
+
+/* Form Links */
+.form-links {
+    margin-top: 10px;
+    display: block;
+}
+.form-links a {
+    color: #000;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn.btn-primary {
+    background-color: #0e1954;
+    color: #fff;
+}
+
+
+/* Alert */
+.alert {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: none;
+}
+.alert.shown {
+    display: block;
+}
+.alert.alert-success {
+    background: green
+}
